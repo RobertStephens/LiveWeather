@@ -3,6 +3,13 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# ignore env for api keys
+# add key to .env.example and copy to .env
+.env
+.env.local
+.env.*.local
+*.pem
+
 # C extensions
 *.so
 
