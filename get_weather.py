@@ -43,7 +43,7 @@ def current_weather(args: argparse.ArgumentParser) -> list[dict]:
 
     if not appid:
         print("Warning: OPENWEATHERMAP_API_KEY is not set, aborting")
-        return
+        raise ValueError("No API keys were provided")
 
     params_openweathermap["appid"] = appid
 
